@@ -8,10 +8,11 @@
 import UIKit
 
 struct CryptoModel {
-    let url = "https://rest.coinapi.io/v1/exchangerate/BTC/USD?apikey=859E15F9-5704-4362-809B-0CCE5EEE8A44"
     
+    let url = "https://rest.coinapi.io/v1/exchangerate/BTC/USD?apikey=859E15F9-5704-4362-809B-0CCE5EEE8A44"
 
     func getData() async throws -> CryptoData {
+        
         guard let strUrl = URL(string: url) else {throw CryptoError.invalidUrl}
 
         let (data, responce) = try await URLSession.shared.data(from: strUrl)
@@ -38,6 +39,7 @@ struct CryptoModel {
             Task {
                 do {
                     let result = try await getData()
+                    print(result.asset_id_base)
                 } catch {
                     print("Error fetching data: \(error)")
                 }

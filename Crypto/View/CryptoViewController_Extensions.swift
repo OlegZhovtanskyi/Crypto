@@ -23,6 +23,6 @@ extension CryptoViewController: UIPickerViewDataSource, UIPickerViewDelegate {
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        constants.currencies[row]
+        print(constants.currencies[row])
     }
 }
