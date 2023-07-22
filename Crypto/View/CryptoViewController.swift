@@ -17,7 +17,7 @@ final class CryptoViewController: UIViewController {
         view.backgroundColor = UIColor(red: 7.0/255, green: 31.0/255, blue: 66.0/255, alpha: 1.0)
         view.addSubview(constants.stack.mainStack)
         view.addSubview(constants.stack.pickerStack)
-//                constants.model.setData()
+        view.addSubview(constants.stack.cryptoStack)
         
         
         //MARK: - StackView
@@ -25,6 +25,13 @@ final class CryptoViewController: UIViewController {
         constants.stack.mainStack.addSubview(constants.label.mainLabel)
         constants.stack.pickerStackAnchor(view: constants.stack.mainStack)
         constants.stack.pickerStack.addSubview(constants.pickerElement.picker)
+        constants.stack.cryptoStackAnchor(view: view)
+        constants.stack.cryptoStacAddSubView()
+        constants.stack.btcStackAnchor(view: constants.stack.cryptoStack)
+        constants.stack.ethStackAnchor(view: constants.stack.btcStack)
+        constants.stack.litStackAnchor(view: constants.stack.ethStack)
+        constants.stack.solStackAnchor(view: constants.stack.litStack)
+        
         
         
         

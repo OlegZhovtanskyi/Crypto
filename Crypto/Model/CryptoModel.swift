@@ -9,12 +9,12 @@ import UIKit
 
 struct CryptoModel {
     
-    let url = "https://rest.coinapi.io/v1/exchangerate/BTC/USD?apikey=859E15F9-5704-4362-809B-0CCE5EEE8A44"
-
-    func getData() async throws -> CryptoData {
-        
+    //    var url = "https://rest.coinapi.io/v1/exchangerate/BTC/USD?apikey=859E15F9-5704-4362-809B-0CCE5EEE8A44"
+    
+    func getData(_ currency: String) async throws -> CryptoData {
+        let url = "https://rest.coinapi.io/v1/exchangerate/BTC/\(currency)?apikey=859E15F9-5704-4362-809B-0CCE5EEE8A44"
         guard let strUrl = URL(string: url) else {throw CryptoError.invalidUrl}
-
+        
         let (data, responce) = try await URLSession.shared.data(from: strUrl)
         
         guard let responce = responce as? HTTPURLResponse, responce.statusCode == 200 else {
@@ -34,18 +34,23 @@ struct CryptoModel {
         }
     }
     
-    func setData(){
+    func setData(_ currency: String, completion: @escaping (String, String, Double) -> Void) {
         DispatchQueue.main.async {
             Task {
                 do {
-                    let result = try await getData()
-                    print(result.asset_id_base)
+                    let result = try await getData(currency)
+                    let cryptoCurrency = result.asset_id_base
+                    let valutCurrency = result.asset_id_quote
+                    let rate = result.rate
+                    completion(cryptoCurrency, valutCurrency, rate)
                 } catch {
                     print("Error fetching data: \(error)")
+                    // You might want to handle the error case here as well
                 }
             }
         }
     }
+
 }
 
 enum CryptoError: Error {
