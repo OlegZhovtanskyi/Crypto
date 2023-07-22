@@ -17,6 +17,8 @@
 		748B1FAE2A698E6D005649F7 /* Stacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748B1FAD2A698E6D005649F7 /* Stacks.swift */; };
 		748B1FB32A699758005649F7 /* CryptoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748B1FB22A699758005649F7 /* CryptoData.swift */; };
 		74A52FE22A62D37D001ED0E6 /* CryptoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A52FE12A62D37D001ED0E6 /* CryptoModel.swift */; };
+		74C1E05A2A6C011000194296 /* CryptoViewController_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C1E0592A6C011000194296 /* CryptoViewController_Extensions.swift */; };
+		74C1E05C2A6C015100194296 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C1E05B2A6C015100194296 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		748B1FAD2A698E6D005649F7 /* Stacks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stacks.swift; sourceTree = "<group>"; };
 		748B1FB22A699758005649F7 /* CryptoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoData.swift; sourceTree = "<group>"; };
 		74A52FE12A62D37D001ED0E6 /* CryptoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoModel.swift; sourceTree = "<group>"; };
+		74C1E0592A6C011000194296 /* CryptoViewController_Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoViewController_Extensions.swift; sourceTree = "<group>"; };
+		74C1E05B2A6C015100194296 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				742624062A6197F90094B0C1 /* CryptoViewController.swift */,
+				74C1E0592A6C011000194296 /* CryptoViewController_Extensions.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -107,6 +112,7 @@
 			children = (
 				74A52FE12A62D37D001ED0E6 /* CryptoModel.swift */,
 				748B1FB22A699758005649F7 /* CryptoData.swift */,
+				74C1E05B2A6C015100194296 /* Constants.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -186,9 +192,11 @@
 				748B1FAA2A698E37005649F7 /* Labels.swift in Sources */,
 				742623F52A6197BA0094B0C1 /* SceneDelegate.swift in Sources */,
 				748B1FAE2A698E6D005649F7 /* Stacks.swift in Sources */,
+				74C1E05C2A6C015100194296 /* Constants.swift in Sources */,
 				742624072A6197F90094B0C1 /* CryptoViewController.swift in Sources */,
 				748B1FB32A699758005649F7 /* CryptoData.swift in Sources */,
 				74A52FE22A62D37D001ED0E6 /* CryptoModel.swift in Sources */,
+				74C1E05A2A6C011000194296 /* CryptoViewController_Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

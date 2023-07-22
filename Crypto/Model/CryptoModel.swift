@@ -32,6 +32,18 @@ struct CryptoModel {
             throw CryptoError.invalidData
         }
     }
+    
+    func setData(){
+        DispatchQueue.main.async {
+            Task {
+                do {
+                    let result = try await getData()
+                } catch {
+                    print("Error fetching data: \(error)")
+                }
+            }
+        }
+    }
 }
 
 enum CryptoError: Error {

@@ -10,10 +10,10 @@ import UIKit
 struct LabeledElement {
     let mainLabel: UILabel = {
         let label = UILabel()
-        label.text = "Text"
+        label.text = "Select currency"
         label.font = .systemFont(ofSize: 30)
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.textColor = .black
+        label.textColor = .white
         return label
     }()
     
@@ -27,7 +27,8 @@ struct LabeledElement {
     }()
     
     
-    func labelAnchor(stack: UIStackView){
+    func mainLabelAnchor(stack: UIStackView){
         mainLabel.centerXAnchor.constraint(equalTo: stack.centerXAnchor).isActive = true
+        mainLabel.topAnchor.constraint(equalTo: stack.topAnchor, constant: 50).isActive = true
     }
 }
