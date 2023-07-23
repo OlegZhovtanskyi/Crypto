@@ -11,6 +11,7 @@ struct Constans {
     var stack = Stack()
     var model = CryptoModel()
     var label = LabeledElement()
+    var images = ImageViews()
     var pickerElement = PickerElement()
     var currencies = ["USD", "UAH", "CAD", "GBP", "EUR"]
     var choosenCurrency = ""

@@ -23,11 +23,21 @@ extension CryptoViewController: UIPickerViewDataSource, UIPickerViewDelegate {
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        constants.model.setData(constants.currencies[row]) {cryptoCurrency, valutCurrency, rate in
-            
-            print(cryptoCurrency)
-            print(valutCurrency)
-            print(rate)
+        constants.model.setData(constants.currencies[row], "BTC") {cryptoCurrency, valutCurrency, rate in
+            self.constants.label.btcPriceLabel.text = String(format: "%0.3f", rate) + " " + self.constants.currencies[row]
+        }
+        
+        constants.model.setData(constants.currencies[row], "ETH") {cryptoCurrency, valutCurrency, rate in
+            self.constants.label.ethPriceLabel.text = String(format: "%0.3f", rate) + " " + self.constants.currencies[row]
+        }
+        
+        constants.model.setData(constants.currencies[row], "SOL") {cryptoCurrency, valutCurrency, rate in
+            self.constants.label.litPriceLabel.text = String(format: "%0.3f", rate) + " " + self.constants.currencies[row]
+        }
+        
+        constants.model.setData(constants.currencies[row], "LIT") {cryptoCurrency, valutCurrency, rate in
+            self.constants.label.solPriceLabel.text = String(format: "%0.3f", rate) + " " + self.constants.currencies[row]
         }
     }
+    
 }

@@ -40,7 +40,7 @@ struct Stack {
     func pickerStackAnchor(view: UIView){
         pickerStack.topAnchor.constraint(equalTo: view.bottomAnchor, constant: 10).isActive = true
         pickerStack.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
-        pickerStack.heightAnchor.constraint(equalToConstant: 100).isActive = true
+        pickerStack.heightAnchor.constraint(equalToConstant: 170).isActive = true
     }
     
     
@@ -57,7 +57,7 @@ struct Stack {
     
     
     func cryptoStackAnchor(view: UIView){
-        cryptoStack.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -20).isActive = true
+        cryptoStack.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -60).isActive = true
         cryptoStack.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
         cryptoStack.heightAnchor.constraint(equalToConstant: 400).isActive = true
     }

@@ -16,6 +16,7 @@
 		748B1FAC2A698E4F005649F7 /* Picker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748B1FAB2A698E4F005649F7 /* Picker.swift */; };
 		748B1FAE2A698E6D005649F7 /* Stacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748B1FAD2A698E6D005649F7 /* Stacks.swift */; };
 		748B1FB32A699758005649F7 /* CryptoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748B1FB22A699758005649F7 /* CryptoData.swift */; };
+		748FA59C2A6D3531004667EC /* ImageViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748FA59B2A6D3531004667EC /* ImageViews.swift */; };
 		74A52FE22A62D37D001ED0E6 /* CryptoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A52FE12A62D37D001ED0E6 /* CryptoModel.swift */; };
 		74C1E05A2A6C011000194296 /* CryptoViewController_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C1E0592A6C011000194296 /* CryptoViewController_Extensions.swift */; };
 		74C1E05C2A6C015100194296 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C1E05B2A6C015100194296 /* Constants.swift */; };
@@ -33,6 +34,7 @@
 		748B1FAB2A698E4F005649F7 /* Picker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Picker.swift; sourceTree = "<group>"; };
 		748B1FAD2A698E6D005649F7 /* Stacks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stacks.swift; sourceTree = "<group>"; };
 		748B1FB22A699758005649F7 /* CryptoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoData.swift; sourceTree = "<group>"; };
+		748FA59B2A6D3531004667EC /* ImageViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViews.swift; sourceTree = "<group>"; };
 		74A52FE12A62D37D001ED0E6 /* CryptoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoModel.swift; sourceTree = "<group>"; };
 		74C1E0592A6C011000194296 /* CryptoViewController_Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoViewController_Extensions.swift; sourceTree = "<group>"; };
 		74C1E05B2A6C015100194296 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				748B1FA92A698E37005649F7 /* Labels.swift */,
 				748B1FAB2A698E4F005649F7 /* Picker.swift */,
 				748B1FAD2A698E6D005649F7 /* Stacks.swift */,
+				748FA59B2A6D3531004667EC /* ImageViews.swift */,
 			);
 			path = CryptoUI;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				742623F32A6197BA0094B0C1 /* AppDelegate.swift in Sources */,
+				748FA59C2A6D3531004667EC /* ImageViews.swift in Sources */,
 				748B1FAC2A698E4F005649F7 /* Picker.swift in Sources */,
 				748B1FAA2A698E37005649F7 /* Labels.swift in Sources */,
 				742623F52A6197BA0094B0C1 /* SceneDelegate.swift in Sources */,
@@ -340,10 +344,11 @@
 				DEVELOPMENT_TEAM = S7F4CE38XT;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Crypto/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CryptoPricer;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -358,7 +363,7 @@
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -372,10 +377,11 @@
 				DEVELOPMENT_TEAM = S7F4CE38XT;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Crypto/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CryptoPricer;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -390,7 +396,7 @@
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
