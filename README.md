@@ -9,3 +9,5 @@ Key Features:
 - Real-time cryptocurrency rates
 - Customizable currency preferences
 - Seamless API calls
+
+![Alt text](image link)
