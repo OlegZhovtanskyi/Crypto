@@ -11,4 +11,9 @@ Key Features:
 - Seamless API calls
 
 ![screenshot](https://github.com/OlegZhovtanskyi/Crypto/blob/main/Screenshot%202023-07-23%20at%2014.18.53.png)
+
+
+
+
+
 ![screenshot](https://github.com/OlegZhovtanskyi/Crypto/blob/main/Screenshot%202023-07-23%20at%2014.20.09.png)
